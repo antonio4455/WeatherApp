@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Weather app</string>
+    <string name="location_information">You either can share you device location or enter city name.</string>
+    <string name="share_current_location">Share device location</string>
+    <string name="city_name">City name</string>
+    <string name="change_location">Change location</string>
+    <string name="current_temperature">Current temperature:</string>
+    <string name="edit_location">Edit location</string>
+    <string name="enter_city_name">Enter city name:</string>
+    <string name="recent_locations">Recent locations:</string>
+</resources>

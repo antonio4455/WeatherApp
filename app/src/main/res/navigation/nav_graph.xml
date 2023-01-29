@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/CurrentTemperatureFragment">
+
+    <fragment
+        android:id="@+id/CurrentTemperatureFragment"
+        android:name="com.ribarevic.antonio.weatherapp.ui.current_temperature.CurrentTemperatureFragment"
+        android:label=""
+        tools:layout="@layout/fragment_current_temperature">
+
+        <action
+            android:id="@+id/action_to_edit_location"
+            app:destination="@id/EditLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditLocationFragment"
+        android:name="com.ribarevic.antonio.weatherapp.ui.edit_location.EditLocationFragment"
+        android:label="@string/edit_location"
+        tools:layout="@layout/fragment_edit_location">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/CurrentTemperatureFragment" />
+    </fragment>
+</navigation>
